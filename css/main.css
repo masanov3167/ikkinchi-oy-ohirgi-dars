@@ -44,10 +44,16 @@ h1, h2, h3, h4, h5, h6, ol, li{
 }
 
 .toggle{
-    margin-top: -100px;
+   width: 16px;
+   height: 16px;
+   padding: 0;
+   border: 0;
+   background: url(../img/nav.svg) no-repeat;
+   background-position: center center;
+   display: none;
 }
 
-.toggle >span{
+/* .toggle >span{
     display: flex;
 
     border-radius: 5px;
@@ -67,7 +73,7 @@ h1, h2, h3, h4, h5, h6, ol, li{
     height: 4px;
     background: rgba(51, 61, 75, 1);
     margin-top: -7px;
-}
+} */
 
 
 .navbar-item{
@@ -153,7 +159,7 @@ h1, h2, h3, h4, h5, h6, ol, li{
     
     }
     .toggle{
-        margin-top: -100px;
+       display: none;
     }
     .navbar-item{
         margin: 0 20px;
@@ -236,30 +242,7 @@ h1, h2, h3, h4, h5, h6, ol, li{
     }
 
     .toggle{
-       margin-top: 100px;
-       display: flex;
-    }
-
-    .toggle >span{
-        display: flex;
-    
-        border-radius: 5px;
-        width: 20px;
-        height: 4px;
-        background: rgba(51, 61, 75, 1);
-    
-        margin-top: 7px;
-    }
-    
-    .toggle >span::after{
-        display: flex;
-        content: "";
-    
-        border-radius: 5px;
-        width: 20px;
-        height: 4px;
-        background: rgba(51, 61, 75, 1);
-        margin-top: -7px;
+      display: block;
     }
     
     .about{
@@ -298,3 +281,442 @@ h1, h2, h3, h4, h5, h6, ol, li{
     }
 }
 
+
+     /* commit section here */
+
+.commit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+}
+
+.commit-img >img, .commit-img >source{
+    border-radius: 10px;
+}
+
+.commit-title{
+    padding-left: 85px;
+}
+
+.commit-title >h4{
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 900;
+    color: rgba(51, 61, 75, 1);
+}
+
+.commit-title >p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: rgba(51, 61, 75, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .commit{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .commit-img >source, .commit-img>img{
+      width: 300px;
+      height: 450px;
+    }
+    
+    .commit-title{
+        margin: 100px 0;
+    }
+    
+    .commit-title >h4{
+        font-size: 32px;
+    }
+    
+    .commit-title >p{
+        font-size: 14px;
+        width: 330;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .commit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        /* padding: 0; */
+        margin-top: 50px;
+    }
+    
+    .commit-img >source, .commit-img>img{
+      width: 100%;
+      height: 450px;
+    }
+    
+    .commit-title{
+        width: 100%;
+        padding: 0;
+       margin-top: 30px;
+    }
+    
+}
+
+     /* coffee section here  */
+
+
+.coffee{
+    margin-top: 30px;
+    position: relative;
+}
+
+.coffee-card{
+    border-radius: 10px;
+    background: rgba(44, 52, 62, 1);
+
+    width: 100%;
+    height: 470px;
+
+   position: relative;
+}
+
+.coffee-img >source, .coffee-img >img{
+    position: absolute;
+    right: 140px;
+    top: -70px;
+    z-index: 1;
+
+    border-radius: 10px;
+}
+
+.coffee-title{
+    width: 45%;
+    padding: 7% 5%;
+}
+.coffee-title >h3{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: serif;
+
+    color: whitesmoke;
+}
+
+.coffee-title >p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: rgba(254, 252, 247, 1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .coffee{
+        margin-top: 140px;
+        position: relative;
+
+        
+    }
+    
+    .coffee-card{
+        border-radius: 10px;
+        background: rgba(44, 52, 62, 1);
+    
+        width: 100%;
+        height: 490px;
+    
+       position: relative;
+
+       padding: 30% 5% 2%;
+    }
+    
+    .coffee-img >source, .coffee-img >img{
+        position: absolute;
+        right: 7%;
+        top: -150px;
+        z-index: 1;
+    
+        border-radius: 10px;
+
+        width: 85%;
+        height: 300px;
+    }
+    
+    .coffee-title{
+        width: 100%;
+        
+       text-align: center;
+    }
+    .coffee-title >h3{
+        font-size: 32px;
+    }
+    
+    .coffee-title >p{
+        font-size: 15px;
+    }   
+}
+
+@media only screen and (max-width: 425px) {
+    .coffee{
+        margin-top: 100px;
+        position: relative;
+
+        
+    }
+    
+    .coffee-card{
+        border-radius: 10px;
+        background: rgba(44, 52, 62, 1);
+    
+        width: 100%;
+        height: 510px;
+    
+       position: relative;
+
+       padding: 30% 5% 2%;
+    }
+    
+    .coffee-img >source, .coffee-img >img{
+        position: absolute;
+        right: 7%;
+        top: -100px;
+        z-index: 1;
+    
+        border-radius: 10px;
+
+        width: 85%;
+        height: 220px;
+    }
+    
+    .coffee-title{
+        width: 100%;
+        
+       text-align: center;
+    }
+    .coffee-title >h3{
+        font-size: 28px;
+    }
+    
+    .coffee-title >p{
+        font-size: 15px;
+        line-height: 25px;
+    }   
+}
+
+
+
+     /* head section here  */
+
+
+.head{
+    padding: 60px;
+}
+
+.head >h3{
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(131, 136, 143, 1);
+}
+
+.head-card-container{
+    display: flex;
+    padding-top: 60px;
+}
+.head-card{
+    width: 33%;
+}
+
+.head-card >img{
+    padding: 30px 0;
+}
+
+.head-card >h3{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: serif;
+    color: rgba(51, 61, 75, 1);
+}
+
+.head-card-info{
+    list-style: none;
+    padding: 15px 0;
+}
+
+.head-card-info >li{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(51, 61, 75, 1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .head{
+        padding: 60px 0;
+    }
+    
+    .head >h3{
+        font-size: 32px;
+    }
+    
+    
+    .head-card >h3{
+        font-size: 24px;
+    }
+    
+    .head-card-info >li{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .head{
+        padding: 60px 0;
+    }
+    
+    .head >h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .head-card-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .head-card{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .head-card >h3{
+        font-size: 28px;
+    }
+    
+    .head-card-info >li{
+        font-size: 16px;
+    }
+}
+
+
+
+/* footer here  */
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background: rgba(44, 52, 62, 1);
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+
+    margin: 40px 0;
+}
+
+.footer-nav{
+    display: flex;
+
+    width: 45%;
+}
+
+.footer-nav >p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(131, 136, 143, 1);
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.footer-icon >svg{
+    color: white;
+    margin: 0 17px;
+}
+
+.footer-icon >svg:hover{
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        height: 270px;
+        
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-logo >img{
+        width: 236px;
+        height: 26px;
+    }
+    
+    .footer-nav{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       width: 100%;   
+    }
+    
+    .footer-nav >p{
+       margin: 25px 20px;
+    }
+    
+    .footer-icon >svg{
+       width: 24px;
+        height: 24px;
+        margin: 30px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .footer{
+        height: 346px;
+        
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-logo >img{
+        width: 218px;
+        height: 24px;
+    }
+    
+    .footer-nav{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+
+       width: 100%;  
+       margin-top: 20px; 
+    }
+    
+    .footer-nav >p{
+      font-size: 12px;
+      font-weight: 700;
+      margin: 13px 0;
+    }
+    
+    .footer-icon >svg{
+       width: 24px;
+        height: 24px;
+        margin: 30px 10px;
+    }
+}
