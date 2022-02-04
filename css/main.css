@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, ol, li{
    height: 16px;
    padding: 0;
    border: 0;
-   background: url(../img/nav.svg) no-repeat;
+   background: url(../img/navbar.svg) no-repeat;
    background-position: center center;
    display: none;
 }
@@ -720,3 +720,5 @@ h1, h2, h3, h4, h5, h6, ol, li{
         margin: 30px 10px;
     }
 }
+
+/* end  */
